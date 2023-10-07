@@ -457,7 +457,7 @@ main {
   position: fixed;
   bottom: 0;
   left: 0;
-  width: 75%;
+  width: 50%;
   background: hsla(240, 1%, 17%, 0.75);
   backdrop-filter: blur(10px);
   border: 1px solid var(--jet);
@@ -467,6 +467,7 @@ main {
 }
 
 .navbar-list {
+  width: 100%;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -1232,11 +1233,25 @@ textarea.form-input::-webkit-resizer { display: none; }
  * responsive larger than 450px screen
  */
 
-@media (min-width: 450px) {
+
+
+@media (min-width: 400px) {
 
   /**
    * client
    */
+   .navbar {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 50%;
+    background: hsla(240, 1%, 17%, 0.75);
+    backdrop-filter: blur(10px);
+    border: 1px solid var(--jet);
+    border-radius: 12px 12px 0 0;
+    box-shadow: var(--shadow-2);
+    z-index: 5;
+  }
 
   .clients-item { min-width: calc(33.33% - 10px); }
 
